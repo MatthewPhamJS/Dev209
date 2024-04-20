@@ -1,0 +1,17 @@
+body {
+    background-color: beige;
+}
+label {
+    color: black;
+    font-weight: bold;
+}
+button {
+    background-color: black;
+    color: wheat;
+}
+ul {
+    background-color: antiquewhite;
+    color: black;
+}
+
+
