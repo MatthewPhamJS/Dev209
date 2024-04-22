@@ -16,7 +16,9 @@ document.getElementById("show").addEventListener("click", function() {
     }
     message += "</ul>"
     // Change it so it shows array constructor.
-    document.getElementById("display").innerHTML += message;
+    document.getElementById("display").innerHTML = message;
+    // Clears the array and removes previous <li> preventing duplicates. 
+    MoviesArray = []
     })
 })
 
@@ -33,6 +35,8 @@ if (mTitle==="null" || mTitle==="" || mRating==="null" || mRating==="" || mRelea
     console.log("Invalid.")
     } else {
             console.log("Everything Valid!")
+            // Closes the show movie feature, until user opens it.
+            document.getElementById("display").innerHTML = '';
             // Call constructor and pass in values then push from array.
             MoviesArray.push(new Movie(mTitle, mRating, mRelease))
              console.log(MoviesArray)
